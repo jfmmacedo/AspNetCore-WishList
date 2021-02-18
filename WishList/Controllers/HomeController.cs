@@ -4,19 +4,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace wishlist.controllers
+namespace WishList.Controllers
 {
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
-            // return View("./Views/Home/Index");
-            return View();
+            return View("Index");
         }
 
         public IActionResult Error() 
         {
-            return View("./View/Shared/Error");
+            return View("Error");
         }
     }
 }
